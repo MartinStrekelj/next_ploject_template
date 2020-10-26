@@ -1,12 +1,12 @@
 module.exports = {
     important: true,
     purge: {
-      content: ['./pages/**/*.tsx']
+        content: ['./pages/**/*.tsx'],
     },
     theme: {},
     variants: {},
     plugins: [],
     future: {
-      purgeLayersByDefault: true,
+        purgeLayersByDefault: true,
     },
-  };
+};
