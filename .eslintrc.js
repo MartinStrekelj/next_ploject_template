@@ -6,7 +6,9 @@ module.exports = {
         'plugin:react-hooks/recommended',
         'prettier/@typescript-eslint',
         'plugin:prettier/recommended',
+        'prettier',
     ],
+    plugins: ['prettier'],
     parserOptions: {
         ecmaVersion: 2020,
         sourceType: 'module',
@@ -16,10 +18,11 @@ module.exports = {
     },
     rules: {
         'react/react-in-jsx-scope': 'off',
+        'prettier/prettier': ['error', { 'endOfLine': 'auto' }],
     },
     settings: {
         react: {
             version: 'detect',
         },
     },
-  };
+};
